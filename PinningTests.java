@@ -136,4 +136,25 @@ public class PinningTests {
         m.run();
         assertTrue(testCell[1][1].getAlive());
     }
+	
+	//Chnage method in Cell toString()
+     @Test // A live cell should return "X"
+    public void toStringLive() {
+        Cell c = new Cell();
+        c.setAlive(true);
+        assertEquals("X",c.toString());
+    }
+
+    @Test // A dead cell should return "."
+    public void toStringDead() {
+        Cell c = new Cell();
+        c.setAlive(false);
+        assertEquals(".",c.toString());
+    }
+
+    @Test // A new cell should return "."
+    public void toStringDefault() {
+        Cell c = new Cell();
+        assertEquals(".",c.toString());
+    }
 }
