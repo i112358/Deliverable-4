@@ -2,7 +2,7 @@
 
 ### Exploratory Testing
 
-At size 10, the game performed as expected. Only the write function seemed a bit weird at times, it didn't successfully save the state of the system at times.
+At size 10, the game performed as expected. Only the write function seemed a bit weird at times, sometimes it didn't successfully save the state of the system.
 
 ### Profiling with VisualVM
 
@@ -25,7 +25,7 @@ I couldn't find anything on the write method using profiling, but I checked the 
 
 In the first problem with convertToInt, the change was simple. I deleted the while loop and returned whatever variable came in.
 
-For the second problem, it was more complicated. For starters, rhe try-catch function and for loop looked time wasting so I deleted them. 
+For the second problem, it was more complicated. For starters, the try-catch function and for loop looked time wasting so I deleted them. 
 
 Then, in the calculateNextIteration method, I felt that there was no need for 2 for loops, and that there should be a way to put them into 1. The answer was using "\_backupCells".
 
