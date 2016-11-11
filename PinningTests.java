@@ -137,8 +137,8 @@ public class PinningTests {
         assertTrue(testCell[1][1].getAlive());
     }
 	
-	//Chnage method in Cell toString()
-     @Test // A live cell should return "X"
+    //Change method in Cell toString()
+    @Test // A live cell should return "X"
     public void toStringLive() {
         Cell c = new Cell();
         c.setAlive(true);
