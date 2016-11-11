@@ -48,3 +48,4 @@ All tests passed.
 After the changes, I ran the program with VisualVM again and this time it was like this:
 ![Profile after] (/profiles/CPUprofile_after.JPG)
 
+We can see that the convertToInt was almost gone. The time for runContinuous also dropped considerably. The performance was slightly improved.
